@@ -2,10 +2,10 @@
 
 ## Usage
 
-1. Put your string resource file named as 'strings.csv' into 'tmp/' dir.
+1. Put your string resource file named as `strings.csv` into `tmp/` dir.
 2. Run `bin/console` to startup irb
 3. Execute `StringSource.exec`
-4. Then you can use strings in 'android/' and 'ios/'
+4. Then you can use strings in `android/` and `ios/`
 
 `strings.csv` should be like follows
 
