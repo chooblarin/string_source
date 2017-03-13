@@ -6,7 +6,7 @@ require "string_source/android"
 require "csv"
 
 module StringSource
-  def exec(filepath)
+  def exec(filepath='tmp/strings.csv')
     langs=['en', 'jp']
     data = CSV.read(filepath, headers: true)
     StringSource::IOS.to_resources(data, langs)
