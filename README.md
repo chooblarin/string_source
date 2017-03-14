@@ -10,7 +10,7 @@
 `strings.csv` should be like follows
 
 ```
-name,jp,en
+name,ja,en
 empty_search_items,キーワードを入れてください,Search articles with keywords
 hint_search,キーワードを入力,Enter keyword
 no_results_search,検索に一致する記事は見つかりませんでした,No results found

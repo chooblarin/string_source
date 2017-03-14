@@ -7,7 +7,7 @@ require "csv"
 
 module StringSource
   def exec(filepath='tmp/strings.csv')
-    langs=['en', 'jp']
+    langs=['en', 'ja']
     data = CSV.read(filepath, headers: true)
     StringSource::IOS.to_resources(data, langs)
     StringSource::Android.to_resources(data, langs)

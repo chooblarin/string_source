@@ -9,14 +9,14 @@ module StringSource
       filename = 'Localizable.strings'
       case lang
         when 'en' then dir = "#{platform}/Base.lproj/"
-        when 'jp' then dir = "#{platform}/ja.lproj/"
+        when 'ja' then dir = "#{platform}/ja.lproj/"
         else           dir = "#{platform}/Base.lproj/"
       end
     elsif platform == 'android' then
       filename = 'strings.xml'
       case lang
         when 'en' then dir = "#{platform}/values/"
-        when 'jp' then dir = "#{platform}/values-ja/"
+        when 'ja' then dir = "#{platform}/values-ja/"
         else           dir = "#{platform}/values/"
       end
     else
