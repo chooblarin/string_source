@@ -12,7 +12,7 @@ module StringSource::IOS
     File.open(dir + filename, 'w') do |f|
       data.each do |d|
         key = StringSource.camelize(d['name'])
-        f.puts "#{key} = \"#{d[lang]}\";"
+        f.puts "\"#{key}\" = \"#{d[lang]}\";"
       end
     end
   end
