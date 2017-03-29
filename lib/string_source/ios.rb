@@ -11,6 +11,7 @@ module StringSource::IOS
     FileUtils.mkdir_p dir
     File.open(dir + filename, 'w') do |f|
       data.each do |d|
+        next unless d['ios'].to_bool
         key = StringSource.camelize(d['name'])
         f.puts "\"#{key}\" = \"#{d[lang]}\";"
       end

@@ -17,6 +17,7 @@ module StringSource::Android
     doc.context[:attribute_quote] = :quote
     resources = doc.add_element('resources')
     data.each do |d|
+      next unless d['android'].to_bool
       resources.add_element('string', {"name" => d['name']}).add_text(d[lang])
     end
 
